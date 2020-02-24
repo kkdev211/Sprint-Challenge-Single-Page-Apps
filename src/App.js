@@ -5,6 +5,7 @@ import WelcomePage from "./components/WelcomePage";
 
 
 import CharacterList from "./components/CharacterList";
+import SearchForm from "./components/SearchForm.js";
 
 
 export default function App() {
@@ -14,6 +15,8 @@ export default function App() {
       {/* <CharacterList /> */}
       <Route path="/" exact component={WelcomePage} />
       <Link to="/characters">Character List></Link>
+      <Link to="/search">Search></Link>
+      <Route path="/search" exact component={SearchForm} />
       <Route path="/characters" exact component={CharacterList} />
     </main>
   );

@@ -1,24 +1,27 @@
 import React from "react";
-import { Link, Card } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Card, CardHeader, CardBody, CardSubtitle, CardText } from "reactstrap";
 
 
 export default function CharacterCard({character}) {
 
   const {name, status, species} = character;
-  return <Card>
-    <Card.Body>
+  return (
+  <Card>
+    <CardBody>
     <Link to={`/CharacterCard/${character.id}`}>
     
     {/* <div className="character-card"> */}
-      <Card.Title>{name}</Card.Title>
+      <CardHeader>{name}</CardHeader>
+      </Link>
 
       {/* <div className="character-status"> */}
-        <Card.Subtitle>Status:{status}</Card.Subtitle>
+        <CardText>Status:{status}</CardText>
   
       {/* <div className="character-species"> */}
-        <Card.Subtitle>Species:{species}</Card.Subtitle>
-  
-    </Link>
-    </Card.Body>
-  </Card>;
+        <CardText>Species:{species}</CardText>
+        
+    </CardBody>
+  </Card>
+  );
 }
