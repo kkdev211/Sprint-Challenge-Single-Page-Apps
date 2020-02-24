@@ -26,7 +26,7 @@ In this challenge, you will create a Single Page Application complete with Clien
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 - [ ]  Explain benefit(s) using `client-side routing`?
- The benefit is a better user experience, faster rendering because in client-side doesn't have to make another request to the server when interacting with the app. The app relies on history API to access the page that has previously been loaded.
+ The benefit is a better user experience, faster rendering because in client-side doesn't have to make another request to the server when interacting with the app. The app relies on history API to access the page that has previously loaded.
 
 
 > Answer:
